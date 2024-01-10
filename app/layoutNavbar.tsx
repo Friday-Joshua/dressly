@@ -12,8 +12,10 @@ export default function LayoutNavbar() {
     return (
         <>
             {path === '/' ? <HomeNavbar /> :
-            path === '/signin'||'/signup' ? null :
+            path === '/signin' ? null :
+            path === '/signup' ? null :
             <Navbar pageOffset={50} />}
+
         </>)
 
 }
